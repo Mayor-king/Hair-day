@@ -1,0 +1,138 @@
+body{
+    background-color: #b1babd;
+    margin: 3rem 10%;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/*Header styling*/
+
+header>img {
+    display: block;
+    margin: auto;
+}
+
+/* navbar styling */
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    justify-content: center;
+    gap: 6%;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+nav li{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav li:hover{
+    transform: scale(1.2);
+    transition: o.3s;
+}
+
+li > a {
+    text-decoration: none;
+    color: rgb(105, 12, 192);
+}
+
+/*Main content styling*/
+
+main > .loc{
+    position: relative;
+}
+
+.loc > div{
+    position:absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgba(256, 256, 256, 0.4);
+}
+
+/*Promotional banner for smaller screens*/
+
+@media only screen and (max-width: 1100px) {
+    main > .loc{
+        position: initial;
+    }
+    
+    .loc > div{
+        position:initial;
+        top: 0;
+        left: 0;
+        padding: 1rem;
+        margin: 1rem 0;
+        background-color: rgba(256, 256, 256, 0.4);
+    }
+}
+
+/* Promotional Banner*/ 
+
+.loc img{
+    width: 100%;
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    margin: 1rem 0;
+}
+
+article{
+    flex: 1;
+    background-color: rgba(164, 112, 212, 0.3);
+    border-radius: 10px;
+    text-align: left;
+    gap: 1rem;
+    padding: 1rem;
+    /*display: flex;
+    flex-direction: column;*/
+}
+
+.btn{
+    padding: .5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    background-color: rgba(124, 6, 124, 0.856);
+}
+
+.btn:hover{
+    background-color: purple;
+}
+
+article img{
+    width: 100%;
+}
+
+/*Footer styling*/
+
+/*footer{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+/*footer div{
+    flex: 1;
+}*
+
+
